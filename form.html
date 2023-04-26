@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formstyle.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <div class="descuento">
+        <h1>20% de descuentos en todos los productos!</h1>
+    </div>
+    <header>
+        <img src="./img/logo 1.svg" alt="logo tienda">
+        <h1>SuperHeroes Fans</h1>
+        
+    </header>
+    <nav>
+        <ul type="none">
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Registrarme</a></li>
+            <li><a href="">Ingresar</a></li>
+        </ul>
+    </nav>
+    <form >
+        <h1>Añadi a tu Super!!</h1>
+        <h2>Agrega tu personaje favorito completando las opciones</h2>
+        <div class="nombre">
+            <label for="nombre">*Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="especie">
+            <label for="especie">*Especie:</label>
+            <select id="especie" name="especie" required>
+                <option value="">Seleccione una especie</option>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="conejo">Conejo</option>
+            </select>
+        </div>
+        <div class="fecha">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="descripcion">
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion"></textarea>
+        </div>
+        <div class="foto">
+            <label for="foto">Agregar foto:</label>
+            <input type="file" id="foto" name="foto">
+        </div>
+        <div class="poderes">
+            <label for="poderes">Poderes:</label>
+            <div id="poderes">
+                <label><input type="checkbox" name="poderes[]" value="volar"> Volar</label>
+                <label><input type="checkbox" name="poderes[]" value="superinteligencia"> Superinteligencia</label>
+                <label><input type="checkbox" name="poderes[]" value="vista de rayo laser"> Vista de rayo laser</label>
+                <label><input type="checkbox" name="poderes[]" value="billetera gorda"> Billetera gorda</label>
+            </div>
+        </div>
+        <div class="tipo">
+            <label for="tipo">Tipo de personaje:</label>
+            <div id="tipo">
+                <label><input type="radio" name="tipo" value="heroe"> Héroe/Heroína</label>
+                <label><input type="radio" name="tipo" value="villano"> Villano/Villana</label>
+            </div>
+        </div>
+        <button type="submit">Añadir</button>
+    </form>
+    <footer><p>Todos los derechos reservados a Digital Mind</p> </footer>
+</body>
+</html>
